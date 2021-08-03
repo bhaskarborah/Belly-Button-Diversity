@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Belly Button Biodiversity Dashboard</a> 
+            <!-- <select id="dropdownMenu">
+                <option value="Bar Chart">Bar Chart</option>
+                <option value="Bubble Chart">Bubble Chart</option>
+            </select>  -->         
+        </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 jumbotron text-center" style="background-image: url('https://wistar.org/sites/default/files/styles/2_1_display/public/2020-12/bacteria%20AdobeStock_199185582_sm.jpg?itok=gEF74Bhr');
+        background-size: cover; background-position: center; color: white">
+          <h1>Belly Button Biodiversity Dashboard</h1>
+          <p>Use the interactive charts below to explore the dataset</p>
+        </div>
+        <div class="col-md-8">
+                    <p>
+                        Bacterial properties which synthesize protein can be used with products derived from plants to produce plant based meat substitutes which taste like beef.
+                        It has been found, that bacteria present in the belly button of some human bodies are best suitable to synthesize this protein. Samples have been collected from anonymous people, and ecah have been given an id number.
+                    </p>
+                    <p>
+                        In the sections below, a dashboard has been built displaying the demographic details, bar-chart, bubble-chart and gauge-chart for the sample collected.
+                        Using this dashboard, it can be determined which bacteria sample can be considered for the process of protein synthesis.
+                    </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <h5>Test Subject ID No.:</h5>
+            <!-- <select id="selDataset"></select> -->
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demographic Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div id="bar"></div>
+        </div>
+        <div class="col-md-5">
+          <div id="gauge"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div id="bubble"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="plots.js"></script> -->
+  <script src="charts.js"></script>
+
+</body>
+
+</html>
