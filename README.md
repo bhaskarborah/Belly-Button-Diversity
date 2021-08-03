@@ -20,6 +20,7 @@ Deliverable 4: Customize the Dashboard
 Deliverable 1: Create a Horizontal Bar Chart
 
 The horizontal bar chart is created as below:
+
 ![Screen Shot 2021-08-02 at 11.46.32 PM](https://i.imgur.com/k7QPhLe.png)
 
 
